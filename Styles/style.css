@@ -1,0 +1,113 @@
+/* google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+}
+
+/* shared-style */
+.orange-text{
+    color: #E95A08;
+}
+
+
+/* nav-section-style */
+.menu-items{
+    display: flex;
+    margin: 18px 0px;
+    justify-content:space-evenly;
+    width: 415px;
+
+}
+.nav-black-item{
+    color: #252432  ;
+    font-weight: 700;
+}
+.nav-text-col{
+    color: #8987A1;
+}
+.nav-text-color{
+    color: #000000;
+    font-weight: 200;
+}
+
+/* banner-style */
+.banner-title{
+    font-weight: bold;
+    font-size: 45px;
+}
+.banner{
+    display: flex;
+    margin: 120px 150px;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+.banner-paragraph{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+}
+.banner-left{
+        width: 570px;
+        height: 299px;
+    }
+
+
+/* mobile-responsive */
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+        margin: 20px;
+        flex-direction: column-reverse;
+    }
+   .nav-jsutify{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 13px 20px;
+    }
+    .banner-left{
+        width: 100%;
+        height: auto;
+        text-align:left;
+        margin-top: 28px;
+    }
+    .banner-right img{
+        width: 100%;
+        height: auto;
+    }
+    .nav-display-none{
+        display: none;
+    }
+    .website-logo{
+        width: auto;
+    }
+    .menu-items {
+        width:auto;
+        align-items: center;
+        justify-content: flex-end;
+
+        
+    }
+    /* .banner-title{
+        font-size: 30px;
+    } */
+    .banner-paragraph{
+        margin-top: 13px;
+    }
+}
