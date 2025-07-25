@@ -174,7 +174,77 @@ main>section {
     margin-bottom: 20px;
 }
 
+/* latest-deal-section-style */
+.deal-head{
+ text-align: center;
+ align-items: center;
+}
+.deal-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+.deal-subtitle{
+    font-size: 22px;
+    font-weight: 300;
+    color: #8987A1;
+    width: 888px;
+    margin: 0 auto;
+}
 
+.deal-card img{
+    /* Opacity removed to use an overlay for text visibility */
+    /* Border-radius moved to the parent container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.deal-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 28px;
+}
+.deal-card-left{
+    display: grid;
+    row-gap: 25px;
+}
+.deal-card-left-top,
+.deal-card-left-bottom,
+.deal-card-right {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.deal-card-left-top {
+    height: 200px; 
+}
+.deal-card-left-bottom {
+    height: 200px; 
+}
+
+.deal-card-right {
+    height: calc(400px + 25px); /* 200px * 2 + 25px gap */
+   grid-row: span 2;
+}
+.container {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* This creates the overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container a {
+    text-decoration: underline;
+}
 
 
 /* mobile-responsive */
@@ -277,5 +347,50 @@ main>section {
         box-sizing: border-box;
     }
 
+    .deal-card,
+    .deal-card-left {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .deal-card-right {
+        grid-row: auto; /* Reset row span */
+    }
+
+    .deal-card-left-top,
+    .deal-card-left-bottom,
+    .deal-card-right {
+        height: 250px; /* Uniform height for mobile */
+    }
+    .deal-card{
+        grid-template-areas: 
+        "deal-card-left-top"
+        "deal-card-left-bottom"
+        "deal-card-right"
+        ;
+    }
+    .deal-title{
+        font-size: 24px;
+        margin-top: 140px;
+        margin-bottom: 16px;
+    }
+    .deal-subtitle{
+        font-size: 14px;
+        width: 350px;
+       
+        margin: 0 auto;
+        padding-bottom: 50px;
+        
+    }
+    .container p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container a{
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
 
 }
+   
