@@ -332,6 +332,12 @@ footer{
         margin: 20px;
         flex-direction: column-reverse;
     }
+    .banner-title{
+        font-size: 24px;
+    }
+    .banner-paragraph{
+        font-size: 14px;
+    }
 
     .nav-jsutify {
         display: flex;
@@ -413,6 +419,7 @@ footer{
         width: 100%;
 
     }
+   
     .plant-lover-title>p{
         font-size: 24px;
         
@@ -427,6 +434,9 @@ footer{
     .plant-lover-right{
         width: 100%;
         padding: 0 20px;
+    }
+    .plant-lover-right ul li{
+        font-size: 14px;
     }
 
  main > section:not(.join-section) {
