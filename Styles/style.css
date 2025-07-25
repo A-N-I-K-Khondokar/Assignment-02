@@ -418,6 +418,9 @@ footer{
         
         
     }
+    .plant-lover-title br {
+        display: none;
+    }
     .trusted-icon{
         display: none;
     }
